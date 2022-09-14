@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom'
+import './App.css'
+
+import Header from './components/Header';
+import Layout from './components/Layout';
+import MainContent from './components/MainContent';
+import { useAppDispatch } from './hooks';
+import LogInMenu from './pages/Login/LogInMenu';
+import SignUpMenu from './pages/SignUp/SignUpMenu';
+import { auth } from './redux/authSlice';
 
 function App() {
+  const dispatch = useAppDispatch()
+  useEffect(() => {
+    dispatch(auth())
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<MainContent />} />
+          <Route path='loginMenu' element={<LogInMenu />} />
+          <Route path='signUpMenu' element={<SignUpMenu />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

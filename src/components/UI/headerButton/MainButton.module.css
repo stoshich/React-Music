@@ -1,0 +1,8 @@
+.mainBtn {
+    font-size: 20px;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(203, 199, 199);
+    border: 1px solid rgb(72, 66, 66);
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.musicBox {
+    height: 300px;
+    display: flex;
+    overflow: auto;
+    /* white-space: nowrap; */
+
+}
+
+.songItem {
+    height: 250px;
+    width: 300px;
+    margin: 15px;
+    flex: 0 1 auto;
+}
+
+.songItem img {
+    height: 200px;
+    width: 200px;
+}
+
+.subtitle {
+    width: 200px;
+}

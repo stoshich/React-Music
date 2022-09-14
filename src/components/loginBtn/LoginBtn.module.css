@@ -1,0 +1,21 @@
+.loginBtn {
+    margin-left: 10px;
+    display: flex;
+    height: 50px;
+    width: 120px;
+    align-items: center;
+}
+
+.loginImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.loginBtn button {
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
