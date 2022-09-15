@@ -14,6 +14,9 @@ const LoginBtn = () => {
             <Link to='loginMenu'>
                 {!isAuth && <button>Log in</button>}
             </Link>
+            <Link to='signUpMenu'>
+                {!isAuth && <button>Sign up</button>}
+            </Link>
             {isAuth && <button onClick={() => dispatch(logout())}>Log out</button>}
         </div>
     )

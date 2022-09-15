@@ -8,7 +8,7 @@ const HeaderNoAuth = () => {
     return (
         <div className='header'>
             <div className="wrapper">
-                <div className="header__items">
+                <div className="header__items-noAuth">
                     <Search />
                     <LoginBtn />
                 </div>

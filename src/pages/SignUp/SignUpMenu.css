@@ -1,0 +1,21 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup__header {
+    text-align: center;
+    font-size: 25px;
+}
+
+.signup__input {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.signup__button {
+    font-size: 16px;
+}
