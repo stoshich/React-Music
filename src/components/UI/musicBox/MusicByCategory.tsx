@@ -23,8 +23,8 @@ const MusicByCategory: FC<MusicByCategoryProps> = ({ title, artistId }) => {
 
 
     return (
-        <div>
-            <div>{title}</div>
+        <div className={classes.contentRow}>
+            <div className={classes.title}>{title}</div>
             <div className={classes.musicBox}>
                 {songsData?.response.songs.map(song =>
                     <div className={classes.songItem} key={song.id}>

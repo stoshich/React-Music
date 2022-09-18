@@ -1,0 +1,20 @@
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+.logo__title {
+    font-size: 20px;
+    color: black;
+}
+
+.logo__image {
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+.logo__title-name {
+    color: rgb(253, 109, 52);
+}

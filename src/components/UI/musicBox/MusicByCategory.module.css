@@ -1,3 +1,11 @@
+.contentRow {
+    margin: 30px 10px;
+}
+
+.title {
+    font-size: 28px;
+}
+
 .musicBox {
     height: 300px;
     display: flex;

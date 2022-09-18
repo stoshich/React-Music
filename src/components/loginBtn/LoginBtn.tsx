@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useAppSelector } from '../../hooks'
 import { useAppDispatch } from '../../hooks'
 import { logout } from '../../redux/authSlice'
+import SmallButton from '../UI/smallButton/SmallButton'
 
 const LoginBtn = () => {
     const dispatch = useAppDispatch()
@@ -12,12 +13,12 @@ const LoginBtn = () => {
         <div className={classes.loginBtn}>
             {isAuth && <div className={classes.loginImg}></div>}
             <Link to='loginMenu'>
-                {!isAuth && <button>Log in</button>}
+                {!isAuth && <SmallButton>Log in</SmallButton>}
             </Link>
             <Link to='signUpMenu'>
-                {!isAuth && <button>Sign up</button>}
+                {!isAuth && <SmallButton>Sign up</SmallButton>}
             </Link>
-            {isAuth && <button onClick={() => dispatch(logout())}>Log out</button>}
+            {isAuth && <SmallButton onClick={() => dispatch(logout())}>Log out</SmallButton>}
         </div>
     )
 }
