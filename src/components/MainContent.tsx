@@ -2,6 +2,7 @@ import React from 'react'
 import '../App.css'
 import { useAppSelector } from '../hooks'
 import StartPage from './StartPage/StartPage'
+import StartPageMusic from './startPageMusic/StartPageMusic'
 import MusicByCategory from './UI/musicBox/MusicByCategory'
 
 
@@ -14,6 +15,7 @@ const MainContent = () => {
     if (!isAuth) return (
         <div className='wrapper'>
             <StartPage />
+            <StartPageMusic />
         </div>
     )
 

@@ -1,0 +1,26 @@
+.songItem {
+    height: 250px;
+    width: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 0 1 auto; */
+}
+
+.songItem img {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.subtitle {
+    text-align: center;
+    width: 200px;
+    font-weight: 300;
+
+}
+
+.subtitle p:first-child {
+    font-weight: 800;
+}

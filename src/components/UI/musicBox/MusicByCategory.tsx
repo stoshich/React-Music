@@ -2,6 +2,7 @@ import React, { FC, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchSongs } from '../../../redux/musicBoxSlice';
 import { AppDispatch, RootState } from '../../../redux/store/store';
+import MusicItem from '../musicItem/MusicItem';
 import classes from './MusicByCategory.module.css'
 
 
@@ -27,13 +28,8 @@ const MusicByCategory: FC<MusicByCategoryProps> = ({ title, artistId }) => {
             <div className={classes.title}>{title}</div>
             <div className={classes.musicBox}>
                 {songsData?.response.songs.map(song =>
-                    <div className={classes.songItem} key={song.id}>
-                        <img src={song.header_image_thumbnail_url} alt="" />
-                        <div className={classes.subtitle}>
-                            {song.title}
-                            <div>{song.primary_artist.name}</div>
-                        </div>
-                    </div>)}
+                    <MusicItem song={song} key={song.id} />
+                )}
             </div>
         </div>
     )

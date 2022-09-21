@@ -1,0 +1,15 @@
+.startMusic {
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.songsBoard {
+    display: flex;
+    flex-wrap: wrap;
+}

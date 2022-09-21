@@ -1,0 +1,40 @@
+.top-container {
+    margin-top: 30px;
+    display: flex;
+    height: 330px;
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.music-img {
+    width: 300px;
+    height: 300px;
+}
+
+.title {
+    margin-left: 30px;
+}
+
+.release-date {
+    margin-left: 30px;
+}
+
+.about-artist {
+    margin-top: 30px;
+}
+
+.artist-img {
+    width: 100px;
+    height: 100px;
+}
+
+.link-to-lyrics {
+    margin-left: 30px;
+}
+
+.link-to-lyrics a {
+    color: rgb(0, 0, 0);
+}
+
+.link-to-lyrics a:hover {
+    color: rgb(253, 109, 52);
+}

@@ -8,6 +8,7 @@ import MainContent from './components/MainContent';
 import { useAppDispatch } from './hooks';
 import LogInMenu from './pages/Login/LogInMenu';
 import SignUpMenu from './pages/SignUp/SignUpMenu';
+import SongPage from './pages/SongPage/SongPage';
 import { auth } from './redux/authSlice';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route index element={<MainContent />} />
           <Route path='loginMenu' element={<LogInMenu />} />
           <Route path='signUpMenu' element={<SignUpMenu />} />
+          <Route path='songPage/:songId' element={<SongPage />} />
         </Route>
       </Routes>
     </div>
