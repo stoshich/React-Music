@@ -7,6 +7,7 @@ interface IMedia {
 interface songItem {
     id: number;
     artist_names: string;
+    title: string;
     full_title: string;
     header_image_thumbnail_url: string;
     header_image_url: string;

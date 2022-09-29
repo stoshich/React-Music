@@ -26,7 +26,7 @@ const SongPage = () => {
         <div className='wrapper'>
             <div className='top-container'>
                 <img className='music-img' src={songItemData?.response.song.header_image_thumbnail_url} alt="" />
-                <div className='title'>{songItemData?.response.song.title_with_featured} - {songItemData?.response.song.artist_names}</div>
+                <div className='title'>{songItemData?.response.song.title} - {songItemData?.response.song.artist_names}</div>
                 <div className='release-date'>
                     Release date
                     <br />{songItemData?.response.song.release_date_for_display}
